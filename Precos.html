@@ -10,7 +10,8 @@
 </head>
 <body>
   <div class="back-button-container">
-    <a href="index.html">
+    <!-- Botão "Voltar" sem JavaScript inline -->
+    <a href="javascript:history.back()">
       <button class="btn"><i class="fas fa-arrow-left"></i> Voltar</button>
     </a>
   </div>
@@ -75,21 +76,7 @@
     </div>
   </div>
 
-  <script>
-    const text = "Preços & Beats";
-    const typewriter = document.querySelector(".typewriter");
-
-    let index = 0;
-    function type() {
-      if (index < text.length) {
-        typewriter.textContent += text.charAt(index);
-        index++;
-        setTimeout(type, 100);
-      }
-    }
-
-    window.addEventListener("load", type);
-  </script>
+  <!-- Referência para o arquivo JavaScript externo -->
   <script src="script.js"></script>
 </body>
 </html>
