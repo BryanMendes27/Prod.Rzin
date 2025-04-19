@@ -1,0 +1,182 @@
+body {
+    font-family: 'Old Standard TT', serif;
+    background-color: #111;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: orange;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+nav ul li a.active {
+    color: orange;
+}
+
+main {
+    flex: 1;
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 5%;
+}
+
+.photo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+}
+
+.content {
+    flex: 2;
+    max-width: 700px;
+    padding-left: 30px;
+}
+
+h1, h2 {
+    font-size: 2.5rem;
+    color: orange;
+    text-align: center;
+}
+
+.typewriter {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.about-section {
+    margin-bottom: 30px;
+}
+
+.checked-item {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+
+.checked-item::before {
+    content: "✔";
+    color: orange;
+    margin-right: 10px;
+}
+
+.timeline-container {
+    margin-bottom: 30px;
+}
+
+.timeline-checkbox {
+    list-style-type: none;
+    padding: 0;
+}
+
+.timeline-checkbox li {
+    margin-bottom: 20px;
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    color: orange;
+    margin-right: 10px;
+}
+
+.back-button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 14px 35px;
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffb732;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 165, 0, 0.4);
+}
+
+.btn i {
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo-container {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        padding-left: 0;
+    }
+}
